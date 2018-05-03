@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShowOrderDetail" targetNamespace="http://tempuri.org/ShowOrderDetail.xsd" xmlns:mstns="http://tempuri.org/ShowOrderDetail.xsd" xmlns="http://tempuri.org/ShowOrderDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ComputerStoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ComputerStoreConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BaiTapLon_ComputerStore.Properties.Settings.GlobalReference.Default.ComputerStoreConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="show_orderDetailTableAdapter" GeneratorDataComponentClassName="show_orderDetailTableAdapter" Name="show_orderDetail" UserDataComponentName="show_orderDetailTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ComputerStoreConnectionString (Settings)" DbObjectName="ComputerStore.dbo.show_orderDetail" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Product, ID_Order, Name_Pro, QuantityOrder, Discount, ProductPrice, Total FROM dbo.show_orderDetail</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Product" DataSetColumn="ID_Product" />
+              <Mapping SourceColumn="ID_Order" DataSetColumn="ID_Order" />
+              <Mapping SourceColumn="Name_Pro" DataSetColumn="Name_Pro" />
+              <Mapping SourceColumn="QuantityOrder" DataSetColumn="QuantityOrder" />
+              <Mapping SourceColumn="Discount" DataSetColumn="Discount" />
+              <Mapping SourceColumn="ProductPrice" DataSetColumn="ProductPrice" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShowOrderDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ShowOrderDetail" msprop:Generator_UserDSName="ShowOrderDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="show_orderDetail" msprop:Generator_TableClassName="show_orderDetailDataTable" msprop:Generator_TableVarName="tableshow_orderDetail" msprop:Generator_TablePropName="show_orderDetail" msprop:Generator_RowDeletingName="show_orderDetailRowDeleting" msprop:Generator_RowChangingName="show_orderDetailRowChanging" msprop:Generator_RowEvHandlerName="show_orderDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="show_orderDetailRowDeleted" msprop:Generator_UserTableName="show_orderDetail" msprop:Generator_RowChangedName="show_orderDetailRowChanged" msprop:Generator_RowEvArgName="show_orderDetailRowChangeEvent" msprop:Generator_RowClassName="show_orderDetailRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Product" msprop:Generator_ColumnVarNameInTable="columnID_Product" msprop:Generator_ColumnPropNameInRow="ID_Product" msprop:Generator_ColumnPropNameInTable="ID_ProductColumn" msprop:Generator_UserColumnName="ID_Product">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Order" msprop:Generator_ColumnVarNameInTable="columnID_Order" msprop:Generator_ColumnPropNameInRow="ID_Order" msprop:Generator_ColumnPropNameInTable="ID_OrderColumn" msprop:Generator_UserColumnName="ID_Order">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_Pro" msprop:Generator_ColumnVarNameInTable="columnName_Pro" msprop:Generator_ColumnPropNameInRow="Name_Pro" msprop:Generator_ColumnPropNameInTable="Name_ProColumn" msprop:Generator_UserColumnName="Name_Pro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuantityOrder" msprop:Generator_ColumnVarNameInTable="columnQuantityOrder" msprop:Generator_ColumnPropNameInRow="QuantityOrder" msprop:Generator_ColumnPropNameInTable="QuantityOrderColumn" msprop:Generator_UserColumnName="QuantityOrder" type="xs:int" minOccurs="0" />
+              <xs:element name="Discount" msprop:Generator_ColumnVarNameInTable="columnDiscount" msprop:Generator_ColumnPropNameInRow="Discount" msprop:Generator_ColumnPropNameInTable="DiscountColumn" msprop:Generator_UserColumnName="Discount" type="xs:int" minOccurs="0" />
+              <xs:element name="ProductPrice" msprop:Generator_ColumnVarNameInTable="columnProductPrice" msprop:Generator_ColumnPropNameInRow="ProductPrice" msprop:Generator_ColumnPropNameInTable="ProductPriceColumn" msprop:Generator_UserColumnName="ProductPrice" type="xs:long" minOccurs="0" />
+              <xs:element name="Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+E:\BaiTapLon_ComputerStore\MyObject\bin\Debug\MyObject.dll
+E:\BaiTapLon_ComputerStore\MyObject\bin\Debug\MyObject.pdb
+E:\BaiTapLon_ComputerStore\MyObject\obj\Debug\MyObject.csprojResolveAssemblyReference.cache
+E:\BaiTapLon_ComputerStore\MyObject\obj\Debug\MyObject.dll
+E:\BaiTapLon_ComputerStore\MyObject\obj\Debug\MyObject.pdb
+D:\CodeC#\BaiTapLon_ComputerStore\MyObject\bin\Debug\MyObject.dll
+D:\CodeC#\BaiTapLon_ComputerStore\MyObject\bin\Debug\MyObject.pdb
+D:\CodeC#\BaiTapLon_ComputerStore\MyObject\obj\Debug\MyObject.csprojResolveAssemblyReference.cache
+D:\CodeC#\BaiTapLon_ComputerStore\MyObject\obj\Debug\MyObject.dll
+D:\CodeC#\BaiTapLon_ComputerStore\MyObject\obj\Debug\MyObject.pdb

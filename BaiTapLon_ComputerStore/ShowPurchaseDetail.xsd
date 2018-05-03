@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ShowPurchaseDetail" targetNamespace="http://tempuri.org/ShowPurchaseDetail.xsd" xmlns:mstns="http://tempuri.org/ShowPurchaseDetail.xsd" xmlns="http://tempuri.org/ShowPurchaseDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ComputerStoreConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ComputerStoreConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BaiTapLon_ComputerStore.Properties.Settings.GlobalReference.Default.ComputerStoreConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="show_purshaseDetialTableAdapter" GeneratorDataComponentClassName="show_purshaseDetialTableAdapter" Name="show_purshaseDetial" UserDataComponentName="show_purshaseDetialTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ComputerStoreConnectionString (Settings)" DbObjectName="ComputerStore.dbo.show_purshaseDetial" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Product, Name_Pro, ID_Purchase, QuantiyPurchase, Price, Total FROM dbo.show_purshaseDetial</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Product" DataSetColumn="ID_Product" />
+              <Mapping SourceColumn="Name_Pro" DataSetColumn="Name_Pro" />
+              <Mapping SourceColumn="ID_Purchase" DataSetColumn="ID_Purchase" />
+              <Mapping SourceColumn="QuantiyPurchase" DataSetColumn="QuantiyPurchase" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="Total" DataSetColumn="Total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ShowPurchaseDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ShowPurchaseDetail" msprop:Generator_UserDSName="ShowPurchaseDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="show_purshaseDetial" msprop:Generator_TableClassName="show_purshaseDetialDataTable" msprop:Generator_TableVarName="tableshow_purshaseDetial" msprop:Generator_TablePropName="show_purshaseDetial" msprop:Generator_RowDeletingName="show_purshaseDetialRowDeleting" msprop:Generator_RowChangingName="show_purshaseDetialRowChanging" msprop:Generator_RowEvHandlerName="show_purshaseDetialRowChangeEventHandler" msprop:Generator_RowDeletedName="show_purshaseDetialRowDeleted" msprop:Generator_UserTableName="show_purshaseDetial" msprop:Generator_RowChangedName="show_purshaseDetialRowChanged" msprop:Generator_RowEvArgName="show_purshaseDetialRowChangeEvent" msprop:Generator_RowClassName="show_purshaseDetialRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Product" msprop:Generator_ColumnVarNameInTable="columnID_Product" msprop:Generator_ColumnPropNameInRow="ID_Product" msprop:Generator_ColumnPropNameInTable="ID_ProductColumn" msprop:Generator_UserColumnName="ID_Product">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name_Pro" msprop:Generator_ColumnVarNameInTable="columnName_Pro" msprop:Generator_ColumnPropNameInRow="Name_Pro" msprop:Generator_ColumnPropNameInTable="Name_ProColumn" msprop:Generator_UserColumnName="Name_Pro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Purchase" msprop:Generator_ColumnVarNameInTable="columnID_Purchase" msprop:Generator_ColumnPropNameInRow="ID_Purchase" msprop:Generator_ColumnPropNameInTable="ID_PurchaseColumn" msprop:Generator_UserColumnName="ID_Purchase">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="QuantiyPurchase" msprop:Generator_ColumnVarNameInTable="columnQuantiyPurchase" msprop:Generator_ColumnPropNameInRow="QuantiyPurchase" msprop:Generator_ColumnPropNameInTable="QuantiyPurchaseColumn" msprop:Generator_UserColumnName="QuantiyPurchase" type="xs:int" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_UserColumnName="Price" type="xs:long" minOccurs="0" />
+              <xs:element name="Total" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:show_purshaseDetial" />
+      <xs:field xpath="mstns:ID_Product" />
+      <xs:field xpath="mstns:ID_Purchase" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
